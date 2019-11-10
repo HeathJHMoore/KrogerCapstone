@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#My username and password for my heroku postgres database
+Kroger/Models/Secret.cs
+
 # User-specific files
 *.rsuser
 *.suo
@@ -75,6 +78,7 @@ StyleCopReport.xml
 *.rsp
 *.sbr
 *.tlb
+
 *.tli
 *.tlh
 *.tmp

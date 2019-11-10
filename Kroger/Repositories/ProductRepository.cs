@@ -10,7 +10,11 @@ namespace Kroger.Repositories
 {
     public class ProductRepository
     {
-        string _connectionString = @"Username=jnnbhkztdilscf;Password=78568411ac46a3a2731110223e7ca164c19c34b94fb425d72b253be0fbd6513a;Host=ec2-174-129-253-47.compute-1.amazonaws.com;Database=d5be1shopark8h;Port=5432;SSL Mode=Require;Trust Server Certificate=True;";
+        //set up a static credential class to keep my username and password private on my local machine
+        static Secret credentials = new Secret();
+        static string _password = credentials.secret;
+        static string _username = credentials.username;
+        string _connectionString = $@"Username={_username};Password={_password};Host=ec2-174-129-253-47.compute-1.amazonaws.com;Database=d5be1shopark8h;Port=5432;SSL Mode=Require;Trust Server Certificate=True;";
 
         public IEnumerable<Product> GetAllProducts()
         {
