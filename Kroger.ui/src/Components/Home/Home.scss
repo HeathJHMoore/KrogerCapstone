@@ -1,0 +1,12 @@
+.productContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    border: solid 1px black;
+    padding: 2em;
+    width: 28%;
+    margin-bottom: 2em;
+}
