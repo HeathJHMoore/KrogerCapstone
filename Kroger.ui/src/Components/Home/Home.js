@@ -34,7 +34,6 @@ class Home extends Component {
   }
 
   render () {
-    const testText = this.props.testText;
     return (
       <div className="Home">
           <button onClick={this.logMeOut}>Log Out</button>
