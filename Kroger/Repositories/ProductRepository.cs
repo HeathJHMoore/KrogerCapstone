@@ -28,8 +28,7 @@ namespace Kroger.Repositories
                             SELECT 
                                 dps.*
                             FROM daily_product_snapshot dps
-                                JOIN maxDate mx on mx.max_date = dps.Capturedate
-                            LIMIT 10";
+                                JOIN maxDate mx on mx.max_date = dps.Capturedate";
                 var product = db.Query<Product>(sql);
                 return product;
             };

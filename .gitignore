@@ -5,6 +5,7 @@
 
 #My username and password for my heroku postgres database
 Kroger/Models/Secret.cs
+Kroger.ui/src/Data/apiKeys.json
 
 # User-specific files
 *.rsuser

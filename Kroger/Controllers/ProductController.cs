@@ -37,7 +37,7 @@ namespace Kroger.Controllers
             return repo.GetMaximumPriceByProduct(productId);
         }
 
-        //Gets a product's all time maximum price
+        //Gets a product's all time minimum price
         [HttpGet("{productId}/min")]
         public float GetMinimumPriceByProduct(string productId)
         {
